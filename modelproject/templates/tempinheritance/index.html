@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+
+{% extends "tempinheritance/basehtml.html" %}
+    {% block body_block %}
+    <h1> this is the index page of hte template inheritance lecutre <h1>
+        <a href="{% url 'tempinheritance:page1' %}">Page 1</a>
+        <a href="{% url 'tempinheritance:page2' %}">Page 2</a>
+        
+            <h1> {{ text|cut:'hello' }} <h1>
+            <h1> {{ number|add:"99" }} <h1>
+
+    {% endblock %}
